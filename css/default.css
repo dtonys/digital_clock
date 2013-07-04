@@ -1,0 +1,14 @@
+/* clearfix */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+/* standard hide class */
+.hidden{
+  display: none;
+}
