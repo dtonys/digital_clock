@@ -8,7 +8,7 @@
   clear: both;
 }
 
-/* standard hide class */
+/* standard hide classes */
 .hidden{
   display: none;
 }
@@ -61,17 +61,11 @@ body{
   width: 150px;
   height: 16px;
   top: 5px;
-  /*border: solid red 1px;*/
-}
-
-.primary, .secondary{
-  border: solid green 1px;
 }
 
 .digit{
   transition: top, 0.5s;
   position: relative;
-  /* border: solid blue 1px; */
 }
 .digit li{
   padding: 5px;

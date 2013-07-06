@@ -49,8 +49,6 @@ function updateClock(clock){
   var m = now.getMinutes();
   var s = now.getSeconds();
   
-  console.log($('.H0 li').height());
-  
   var hours = [Math.floor(h/10), h%10];
   var minutes = [Math.floor(m/10), m%10];
   var seconds = [Math.floor(s/10), s%10];
@@ -75,11 +73,11 @@ $(document).ready(function(e){
     $S0: $('.S0'),
     $S1: $('.S1')
   };
+  
   center($(this), $widgetCont);
-  //clock object contains 6 digit columns
   updateClock(clock);
   setTimeout(function(){
-    $clockCont.removeClass('invis');
+    $widgetCont.removeClass('invis');
   }, 500);
   
   //center element when window is resized
@@ -90,6 +88,4 @@ $(document).ready(function(e){
   setInterval(function(){
     updateClock(clock);
   }, 1000);
- 
-  
 });
