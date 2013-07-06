@@ -12,3 +12,75 @@
 .hidden{
   display: none;
 }
+.invis{
+  visibility: hidden;
+}
+
+/* border box for superior box model */
+html *{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+body{
+  margin: 50px;
+}
+
+#header{
+  text-align: center;
+  font-size: 30px;
+}
+
+#widget-cont{
+  height: 60px;
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 5px;
+}
+
+#clock-cont{
+  height: 26px;
+  overflow: hidden;
+}
+#clock-cont > *{
+  float: left;
+}
+
+#widget-cont .labels{
+  border-bottom: solid white 1px;
+}
+#widget-cont .labels  > *{
+  float: left;
+  padding: 5px 4px 5px 5px;
+}
+
+#view-rect{
+  position: absolute;
+  width: 150px;
+  height: 16px;
+  top: 5px;
+  /*border: solid red 1px;*/
+}
+
+.primary, .secondary{
+  border: solid green 1px;
+}
+
+.digit{
+  transition: top, 0.5s;
+  position: relative;
+  /* border: solid blue 1px; */
+}
+.digit li{
+  padding: 5px;
+}
+p.divider{
+  width: 5px;
+  position: relative;
+  top: 2px;
+  color: white;
+  background: black;
+  padding: 0 5px;
+}
